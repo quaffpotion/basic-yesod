@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 922fbbbaba15f3ffbb85a73373aa61344631b0fcdfdca790db8cad5623955194
+-- hash: 873ccfc5c9846fdc1697ed6a2dee7ffbdaec5202b92058a47007e64047934007
 
 name:           basic-yesod
 version:        0.1.0.0
@@ -34,6 +34,7 @@ library
       src
   build-depends:
       base >=4.7 && <5
+    , yesod
   default-language: Haskell2010
 
 executable basic-yesod-exe
@@ -46,6 +47,7 @@ executable basic-yesod-exe
   build-depends:
       base >=4.7 && <5
     , basic-yesod
+    , yesod
   default-language: Haskell2010
 
 test-suite basic-yesod-test
@@ -59,4 +61,5 @@ test-suite basic-yesod-test
   build-depends:
       base >=4.7 && <5
     , basic-yesod
+    , yesod
   default-language: Haskell2010
